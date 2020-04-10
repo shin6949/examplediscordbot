@@ -6,7 +6,7 @@ class chatbot(discord.Client):
     # 프로그램이 처음 실행되었을 때 초기 구성
     async def on_ready(self):
         # 상태 메시지 설정
-        # 종류는 3가지: Game, Streaming, CustomActivity
+        # 종류는 3가지: Game, Streaming, Activity
         game = discord.Game("내용")
 
         # 계정 상태를 변경한다.
@@ -22,7 +22,7 @@ class chatbot(discord.Client):
         # message.author.bot = message의 author가 bot이냐 아니냐를 질의하여 True or False로 표시
         # 즉, if는 True일 때 : 밑에 들여쓰기 된 내용을 시행하므로, author가 Bot일 경우 아래의 코드를 실행
         if message.author.bot:
-            # return None = 아무 것도 Return 하지 않음. 함수의 수행을 끝내는 역할도 함.
+            # return None = 아무 것도 Return 하지 않음. 함수의 수행을 끝내는 역할을 함.
             # 즉, return None이 실행된다면, 순차 지향인 코드에서는 아랫 줄의 코드를 실행하지 않게 됨.
             return None
         
@@ -45,5 +45,4 @@ if __name__ == "__main__":
     # 클래스 객체를 생성
     client = chatbot()
     # TOKEN 값을 통해 로그인하고 봇을 실행
-    client.run("DISCORD BOT TOKEN")
-
+    client.run("Your Discord Bot Token")
