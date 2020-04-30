@@ -25,7 +25,7 @@ class chatbot(discord.Client):
             # return None = 아무 것도 Return 하지 않음. 함수의 수행을 끝내는 역할을 함.
             # 즉, return None이 실행된다면, 순차 지향인 코드에서는 아랫 줄의 코드를 실행하지 않게 됨.
             return None
-        
+
         # message.content = message의 내용
         # == "!바보" = 왼쪽의 값이 "!바보"와 완벽 일치하면 True, 아니면 False를 리턴
         # 즉, 메시지의 내용이 "!바보"라고 하면 : 밑에 들여쓰기 된 내용을 시행하게 됨.
@@ -36,7 +36,6 @@ class chatbot(discord.Client):
             msg = "너도 바보"
             # msg에 지정된 내용대로 메시지를 전송
             await channel.send(msg)
-            
             return None
 
 
