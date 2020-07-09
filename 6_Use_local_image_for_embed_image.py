@@ -20,7 +20,7 @@ class chatbot(discord.Client):
             channel = message.channel
 
             # 이미지를 지정한 URL에서 다운로드하여, "explain.png"로 저장
-            urllib.request.urlretrieve("https://cdn.discordapp.com/attachments/665897061048254477/730785305535184916/1.png", "explain.png")
+            urllib.request.urlretrieve("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png", "explain.png")
 
             # 디스코드에 올릴 파일을 지정하고, attachment에서 사용할 이름을 "image.png"로 지정
             image = discord.File("explain.png", filename="image.png")
