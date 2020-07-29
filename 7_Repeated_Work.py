@@ -9,7 +9,7 @@ class chatbot(discord.Client):
     # 여기 함수는 에러가 나도 에러 메시지가 출력되지 않으므로 주의.
     @tasks.loop(seconds=1)
     async def every_hour_notice(self):
-        if datetime.datetime.now().second == 0:
+        if datetime.datetime.now().minute == 0 and datetime.datetime.now().second == 0:
             await client.get_guild("Input Your Server ID as Int").get_channel("Input Your Channel ID as Int").send("현재 {}시 {}분 입니다.".format(datetime.datetime.now().hour, datetime.datetime.now().minute))
 
             # 1초 sleep하여 중복 전송 방지
