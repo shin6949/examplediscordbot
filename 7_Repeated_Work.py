@@ -1,6 +1,9 @@
 import discord
+# 반복 작업을 위한 패키지
 from discord.ext import tasks
+# 현재 시간을 받아와 구조체에 넣어주는 용도로 사용할 패키지
 import datetime
+# 중복 전송을 방지하기 위해 사용할 패키지
 import time
 
 
