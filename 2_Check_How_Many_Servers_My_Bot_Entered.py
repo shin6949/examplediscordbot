@@ -4,7 +4,9 @@ from discord.ext import commands
 # External File
 import load_json_variable as variable
 
-bot = commands.Bot()
+# Define the prefix. All command can call after prefix.
+prefix = "!"
+bot = commands.Bot(command_prefix=prefix)
 
 
 @bot.event
